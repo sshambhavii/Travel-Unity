@@ -1,0 +1,337 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    line-height: 1.15;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.625;
+    margin: 0;
+    font-family: "Alegreya Sans", sans-serif;
+    overflow-x: hidden;
+    zoom: 1;
+}
+
+p {
+    margin: 0 0 28px;
+    padding: 0;
+}
+
+a {
+    background-color: transparent;
+}
+
+a,
+button,
+.button {
+    transition: all 0.1s ease-in-out;
+}
+
+a,
+h6 {
+    color: #ddd200;
+}
+
+a:focus,
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+a,
+h6,
+.entry-title a:focus,
+.entry-title a:hover,
+.site-footer .current-menu-item>a,
+.site-footer .genesis-nav-menu a:focus,
+.site-footer .genesis-nav-menu a:hover {
+    color: #ddd200;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #111;
+    font-family: Lora, serif;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+
+button,
+.button {
+    background-color: #ddd200;
+    color: #000000;
+    border-width: 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.625;
+    padding: 19px 30px 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: normal;
+    width: auto;
+}
+
+.button {
+    display: inline-block;
+}
+
+a.button:focus,
+a.button:hover,
+button:focus,
+button:hover {
+    background-color: #333;
+    border-width: 0;
+    color: #fff;
+}
+
+.header-hero {
+    background-color: #111;
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.85) 100%), url(http://www.travelunity.org/wp-content/uploads/2020/07/photo-1525026198548-4baa812f1183-1533x800.jpeg);
+    color: #fff;
+    padding-bottom: 14vw;
+}
+
+.site-header>.wrap {
+    padding: 20px 0;
+}
+
+.site-inner,
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-area {
+    float: left;
+    padding: 10px 0;
+    text-align: center;
+    width: 50%;
+}
+
+.site-description,
+.site-title {
+    margin-bottom: 0;
+    text-align: left;
+    text-indent: 0;
+}
+
+.site-title {
+    font-family: Lora, serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.site-title a,
+.site-title a:focus,
+.site-title a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+.nav-primary {
+    text-align: center;
+}
+
+.nav-primary .wrap {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.genesis-nav-menu {
+    clear: both;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    width: 100%;
+}
+
+.genesis-nav-menu .menu-item {
+    display: inline-block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+.nav-primary .genesis-nav-menu>.menu-item>a {
+    border-bottom: 1px solid transparent;
+}
+
+.nav-primary .genesis-nav-menu>.menu-item>a:focus,
+.nav-primary .genesis-nav-menu>.menu-item>a:hover,
+.nav-primary .genesis-nav-menu>.menu-item.current-menu-item>a {
+    border-bottom-color: #fff;
+}
+
+.genesis-nav-menu a {
+    color: #fff;
+    display: inline-block;
+    letter-spacing: 2px;
+    outline-offset: -1px;
+    padding: 32px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.genesis-nav-menu .sub-menu {
+    background: #000;
+    left: -9999px;
+    margin-top: -1px;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.4s ease-in-out;
+    width: 200px;
+    z-index: 99;
+}
+
+.genesis-nav-menu .sub-menu a {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-top: 0;
+    font-size: 11px;
+    margin-bottom: 1px;
+    padding: 20px;
+    position: relative;
+    width: 200px;
+    word-wrap: break-word;
+}
+
+.genesis-nav-menu .sub-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #111;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+    border-top-width: 0;
+    margin: -52px 0 0 200px;
+}
+
+.genesis-nav-menu .menu-item:hover {
+    position: static;
+}
+
+.genesis-nav-menu .menu-item:hover>.sub-menu {
+    display: block;
+    left: auto;
+    opacity: 1;
+}
+
+.menu .menu-item:focus {
+    position: static;
+}
+
+.menu .menu-item>a:focus+ul.sub-menu,
+.menu .menu-item:hover>ul.sub-menu {
+    left: auto;
+    opacity: 1;
+}
+
+.hero-page-title {
+    padding: 8vw 180px 0 180px;
+    text-align: center;
+}
+
+.hero-page-title h1,
+.hero-page-title .entry-title {
+    color: #fff;
+    font-size: 64px;
+}
+
+.site-inner {
+    background-color: white;
+    box-shadow: none;
+    margin-top: -50px;
+    padding: 0;
+    clear: both;
+    position: relative;
+    word-wrap: break-word;
+    z-index: 1;
+    box-shadow: wheat;
+    padding-bottom: 50px;
+}
+
+.site-inner::before {
+    background-color: #ddd200;
+    content: "";
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+    width: 2px;
+    z-index: 9;
+}
+
+.content {
+    float: none;
+    margin: 0 auto;
+    background-color: transparent;
+    width: 660px;
+    max-width: 660px;
+}
+
+.grid_serve {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.set {
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.site-footer {
+    font-size: 16px;
+    line-height: 1;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.site-footer .genesis-nav-menu {
+    padding-bottom: 20px;
+}
+
+.site-footer .genesis-nav-menu a {
+    color: #333;
+}
